@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Compras</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html" class="logo"><img src="assets/icon/Logo.png" alt="Logo"></a>
+
+            <nav class="nav__enlace">
+                <a href="Nosotros.html" class="nav__enlace">Nosotros</a>
+                <a href="Contacto.html" class="nav__enlace">Contacto</a>
+                <a href="admin.html" class="nav__enlace">Administrador</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h2>Información de Compra</h2>
+
+        <form class="compras">
+            <div>
+                <div class="compras__campo">
+                    <label for="nombre">Nombre</label>
+                    <input class="compras__texto" type="text" id="nombre" placeholder="Nombre Completo">
+                </div>
+
+                <div class="compras__campo">
+                    <label for="telefono">Teléfono</label>
+                    <input class="compras__texto" type="number" id="telefono" placeholder="Teléfono">
+                </div>
+
+                <div class="compras__campo">
+                    <label for="email">Correo</label>
+                    <input class="compras__texto" type="email" id="email" placeholder="Su Correo">
+                </div>
+
+                <div class="compras__campo">
+                    <label for="tipo">Tipo</label>
+                    <select id="tipo" class="compras__texto">
+                        <option disabled selected>--Selecciona un tipo--</option>
+                        <option>Cumpleaños</option>
+                        <option>Boda</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+
+                <div class="compras__campo">
+                    <label for="desc">Descripción</label>
+                    <textarea class="compras__texto compras__textarea" id="desc"
+                        placeholder="Descripción del pastel"></textarea>
+                </div>
+            </div>
+
+            <div>
+                <div class="compras__campo">
+                    <h4>Sabor</h4>
+                    <div class="compras__checkbox">
+                        <input type="checkbox" id="vainilla">
+                        <label for="vainilla">Vainilla</label>
+                    </div>
+
+                    <div class="compras__checkbox">
+                        <input type="checkbox" id="chocolate">
+                        <label for="chocolate">Chocolate</label>
+                    </div>
+
+                    <div class="compras__checkbox">
+                        <input type="checkbox" id="fresa">
+                        <label for="fresa">Fresa</label>
+                    </div>
+
+                    <div class="compras__checkbox">
+                        <input type="checkbox" id="frutos_rojos">
+                        <label for="frutos_rojos">Frutos Rojos</label>
+                    </div>
+
+                </div>
+
+                <div class="compras__campo">
+                    <h4>Decoraciones</h4>
+
+                    <div class="compras__checkbox">
+                        <input type="checkbox" id="fondant">
+                        <label for="fondant">Fondant</label>
+                    </div>
+
+                    <div class="compras__checkbox">
+                        <input type="checkbox" id="cobertura">
+                        <label for="cobertura">Cobertura</label>
+                    </div>
+
+                    <div class="compras__checkbox">
+                        <input type="checkbox" id="betun">
+                        <label for="betun">Betun</label>
+                    </div>
+                </div>
+            </div>
+
+            <input class="compras__button" type="submit" value="Realizar Pedido">
+            <input class="compras__button" type="reset" value="Limpiar">
+        </form>
+    </main>
+    <footer class="footer">
+        <p>Todos los Derechos Reservados © 2022 </p>
+    </footer>
+</body>
+
+</html>
